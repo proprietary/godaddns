@@ -9,6 +9,7 @@ You will need to [get an API key and API secret](https://developer.godaddy.com/k
 ## Download
 
 [Linux 64-bit](https://github.com/zelcon5/godaddns/raw/master/godaddns-linux-amd64)
+
 [Windows 64-bit](https://github.com/zelcon5/godaddns/raw/master/godaddns-windows-amd64.exe)
 
 ## Usage
