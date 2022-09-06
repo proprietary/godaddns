@@ -45,14 +45,16 @@ func getDomainIPv4() (string, error) {
 func putNewIP(ip string) error {
 	var buf bytes.Buffer
 
-	err := json.NewEncoder(&buf).Encode(&struct {
+	err := json.NewEncoder(&buf).Encode(&[1]struct {
 		Name string `json:"name"`
 		Data string `json:"data"`
 		TTL int64 `json:"ttl"`
 	} {
-		SUBDOMAIN,
-		ip,
-		600,
+		{
+			SUBDOMAIN,
+			ip,
+			600,
+		},
 	})
 	if err != nil {
 		return err
